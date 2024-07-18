@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Scheduler Results</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<h1>Travel Scheduler Results</h1>
+<table class="table">
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Departure Time</th>
+<th>Arrival Time</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+{% for result in results %}
+<tr>
+<td>{{ result['from'] }}</td>
+<td>{{ result['to'] }}</td>
+<td>{{ result['departure_time'] }}</td>
+<td>{{ result['arrival_time'] }}</td>
+<td>{{ result['price'] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
