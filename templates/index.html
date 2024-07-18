@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Scheduler</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<h1>Travel Scheduler</h1>
+<p>Plan your journey by selecting the modes of transport you prefer.</p>
+<form action="/results" method="post">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="train" id="train" name="transport_options[]">
+<label class="form-check-label" for="train">
+Train
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="bus" id="bus" name="transport_options[]">
+<label class="form-check-label" for="bus">
+Bus
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="flight" id="flight" name="transport_options[]">
+<label class="form-check-label" for="flight">
+Flight
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="donkey" id="donkey" name="transport_options[]">
+<label class="form-check-label" for="donkey">
+Donkey
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="ferry" id="ferry" name="transport_options[]">
+<label class="form-check-label" for="ferry">
+Ferry
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="bike" id="bike" name="transport_options[]">
+<label class="form-check-label" for="bike">
+Bike
+</label>
+</div>
+<br>
+<button type="submit" class="btn btn-primary">Search</button>
+</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
